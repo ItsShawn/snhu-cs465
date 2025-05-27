@@ -1,22 +1,21 @@
 {{> header}}
 
 <h1>Travel Page</h1>
-
 <h2>Editable List of Stuff</h2>
-<a href="/">Back to Whatever Page</a>
 
-<div style="margin: 20px 0;">
-  <input type="text" placeholder="Search Travel" />
-  <button>Search</button>
-</div>
+<a href="/">Back to Whatever Page</a><br><br>
 
-<nav style="margin-bottom: 20px;">
-  <button>Beaches (5)</button>
-  <button>Cruises (4)</button>
-  <button>Mountains (6)</button>
-</nav>
+<input type="text" placeholder="Search Travel">
+<button>Search</button>
 
-<table border="1" cellspacing="0" cellpadding="10">
+<br><br>
+<button>Beaches (5)</button>
+<button>Cruises (4)</button>
+<button>Mountains (6)</button>
+
+<br><br>
+
+<table border="1">
   <thead>
     <tr>
       <th>ID</th>
@@ -29,57 +28,21 @@
     </tr>
   </thead>
   <tbody>
+    {{#each trips}}
     <tr>
-      <td>B0101</td>
-      <td>Cancun</td>
-      <td>4 nights / 5 days</td>
-      <td>February 14, 2021</td>
-      <td>Emerald Bay, 3-stars</td>
-      <td>$799.00</td>
+      <td>{{this.id}}</td>
+      <td>{{this.name}}</td>
+      <td>{{this.length}}</td>
+      <td>{{this.start}}</td>
+      <td>{{this.resort}}</td>
+      <td>{{this.price}}</td>
       <td><a href="#">Edit</a> | <a href="#">X</a></td>
     </tr>
-    <tr>
-      <td>B0103</td>
-      <td>Barbados</td>
-      <td>5 nights / 6 days</td>
-      <td>February 28, 2021</td>
-      <td>Castaway Cove, 4-stars</td>
-      <td>$1,299.00</td>
-      <td><a href="#">Edit</a> | <a href="#">X</a></td>
-    </tr>
-    <tr>
-      <td>B0401</td>
-      <td>Panama City</td>
-      <td>4 nights / 5 days</td>
-      <td>March 21, 2021</td>
-      <td>Sunseeker Surf, 4-stars</td>
-      <td>$1,199.00</td>
-      <td><a href="#">Edit</a> | <a href="#">X</a></td>
-    </tr>
-    <tr>
-      <td>B0701</td>
-      <td>Tahiti</td>
-      <td>6 nights / 7 days</td>
-      <td>March 28, 2021</td>
-      <td>Hedonist Heaven, 5-stars</td>
-      <td>$1,799.00</td>
-      <td><a href="#">Edit</a> | <a href="#">X</a></td>
-    </tr>
-    <tr>
-      <td>B0901</td>
-      <td>French Riviera</td>
-      <td>5 nights / 6 days</td>
-      <td>April 11, 2021</td>
-      <td>Chateau Royal, 5-stars</td>
-      <td>$2,499.00</td>
-      <td><a href="#">Edit</a> | <a href="#">X</a></td>
-    </tr>
+    {{/each}}
   </tbody>
 </table>
 
-<div style="margin-top: 20px;">
-  <button>Add a Trip</button>
-</div>
-
+<br>
+<button>Add a Trip</button>
 
 {{> footer}}
