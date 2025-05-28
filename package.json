@@ -20,6 +20,7 @@
   "homepage": "https://github.com/ItsShawn/snhu-cs465#readme",
   "dependencies": {
     "express": "^5.1.0",
-    "hbs": "^4.2.0"
+    "hbs": "^4.2.0",
+    "mongoose": "^8.15.1"
   }
 }
