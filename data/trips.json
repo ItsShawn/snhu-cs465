@@ -1,52 +1,32 @@
 [
   {
-    "code": "B0101",
-    "name": "Cancun",
+    "code": "GALR120214",
+    "name": "Gale Reef",
     "length": "4 nights / 5 days",
     "start": "2021-02-14T08:00:00.000Z",
     "resort": "Emerald Bay, 3-stars",
     "perPerson": "$799.00",
     "image": "reef1.jpg",
-    "description": "Cancun trip description."
+    "description": "Sed et augue lorem. In sit amet placerat arcu. Mauris volutpat ipsum ac justo mollis vel vestibulum orci gravida. Vestibulum sit amet porttitor odio. Nulla facilisi. Fusce at pretium felis. Sed consequat libero ut turpis venenatis ut aliquam risus semper. Etiam convallis mi vel risus pretium sodales. Etiam nunc lorem ullamcorper vitae laoreet."
   },
   {
-    "code": "B0103",
-    "name": "Barbados",
+    "code": "DAWR120228",
+    "name": "Dawson’s Reef",
     "length": "5 nights / 6 days",
     "start": "2021-02-28T08:00:00.000Z",
     "resort": "Castaway Cove, 4-stars",
     "perPerson": "$1,299.00",
     "image": "reef2.jpg",
-    "description": "Barbados trip description."
+    "description": "Integer magna leo, posuere et dignissim vitae, porttitor at odio. Pellentesque a metus nec magna placerat volutpat. Nunc nisi mi, elementum sit amet aliquet quis, tristique quis nisl. Curabitur odio lacus, blandit ut hendrerit vulputate, vulputate at est. Morbi aliquet viverra metus eu consectetur. In lorem dui, elementum sit amet convallis ac, tincidunt vel sapien."
   },
   {
-    "code": "B0401",
-    "name": "Panama City",
+    "code": "CLAR130321",
+    "name": "Claire’s Reef",
     "length": "4 nights / 5 days",
     "start": "2021-03-21T08:00:00.000Z",
     "resort": "Sunseeker Surf, 4-stars",
     "perPerson": "$1,199.00",
     "image": "reef3.jpg",
-    "description": "Panama City trip description."
-  },
-  {
-    "code": "B0701",
-    "name": "Tahiti",
-    "length": "6 nights / 7 days",
-    "start": "2021-03-28T08:00:00.000Z",
-    "resort": "Hedonist Heaven, 5-stars",
-    "perPerson": "$1,799.00",
-    "image": "reef4.jpg",
-    "description": "Tahiti trip description."
-  },
-  {
-    "code": "B0901",
-    "name": "French Riviera",
-    "length": "5 nights / 6 days",
-    "start": "2021-04-11T08:00:00.000Z",
-    "resort": "Chateau Royal, 5-stars",
-    "perPerson": "$2,499.00",
-    "image": "reef5.jpg",
-    "description": "French Riviera trip description."
+    "description": "Donec sed felis risus. Nulla facilisi. Donec a orci tellus, et auctor odio. Fusce ac orci nibh, quis semper arcu. Cras orci neque, euismod et accumsan ac, sagittis molestie lorem. Proin odio sapien, elementum at tempor non. Vulputate eget libero. In hac habitasse platea dictumst. Integer purus justo, egestas eu consectetur eu, cursus in tortor. Quisque nec nunc ac mi ultrices iaculis."
   }
 ]

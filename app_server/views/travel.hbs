@@ -1,21 +1,42 @@
 {{> header}}
 
-<h1>Travel Page</h1>
-<h2>Editable List of Stuff</h2>
-
-<a href="/">Back to Whatever Page</a><br><br>
-
-<input type="text" placeholder="Search Travel">
-<button>Search</button>
+<div id="contents">
+  <div class="box">
+    <div>
+      <div class="body">
+        <h1>Travel</h1>
+        <ul id="sites">
+          {{#each trips}}
+          <li>
+            <a href="/api/trips/{{this.code}}">
+              <img src="images/{{this.image}}" alt="{{this.name}}">
+            </a>
+            <h2><a href="/api/trips/{{this.code}}">{{this.name}}</a></h2>
+            {{{this.description}}}
+          </li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
 
 <br><br>
-<button>Beaches (5)</button>
-<button>Cruises (4)</button>
-<button>Mountains (6)</button>
+
+<h2 style="text-align:center;">Editable List of Stuff</h2>
+<div style="text-align:center;">
+  <a href="/">Back to Whatever Page</a><br><br>
+  <input type="text" placeholder="Search Travel">
+  <button>Search</button>
+  <br><br>
+  <button>Beaches (5)</button>
+  <button>Cruises (4)</button>
+  <button>Mountains (6)</button>
+</div>
 
 <br><br>
 
-<table border="1">
+<table border="1" cellspacing="0" cellpadding="10" align="center">
   <thead>
     <tr>
       <th>ID</th>
@@ -30,12 +51,12 @@
   <tbody>
     {{#each trips}}
     <tr>
-      <td>{{this.id}}</td>
+      <td>{{this.code}}</td>
       <td>{{this.name}}</td>
       <td>{{this.length}}</td>
       <td>{{this.start}}</td>
       <td>{{this.resort}}</td>
-      <td>{{this.price}}</td>
+      <td>{{this.perPerson}}</td>
       <td><a href="#">Edit</a> | <a href="#">X</a></td>
     </tr>
     {{/each}}
@@ -43,6 +64,8 @@
 </table>
 
 <br>
-<button>Add a Trip</button>
+<div style="text-align:center;">
+  <button>Add a Trip</button>
+</div>
 
 {{> footer}}
