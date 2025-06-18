@@ -1,15 +1,14 @@
 const mongoose = require('mongoose');
 
 const tripSchema = new mongoose.Schema({
-  code: { type: String, required: true, index: true },
-  name: { type: String, required: true, index: true },
-  length: { type: String, required: true },
-  start: { type: Date, required: true },
-  resort: { type: String, required: true },
-  perPerson: { type: String, required: true },
-  image: { type: String, required: true },
-  description: { type: String, required: true }
+  code: { type: String, required: true, unique: true },
+  name: { type: String, required: true },
+  length: String,
+  start: Date,
+  resort: String,
+  perPerson: Number,
+  image: String,
+  description: String
 });
 
-const Trip = mongoose.model('trips', tripSchema);
-module.exports = Trip;
+mongoose.model('Trip', tripSchema);

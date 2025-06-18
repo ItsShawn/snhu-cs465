@@ -1,0 +1,49 @@
+<div class="container mt-5">
+  <h2 class="mb-4">Edit Trip</h2>
+
+  <form [formGroup]="editForm" (ngSubmit)="onSubmit()" class="row g-3">
+    <div class="col-md-6">
+      <label class="form-label">Trip Code</label>
+      <input class="form-control" formControlName="code" [disabled]="true" />
+    </div>
+
+    <div class="col-md-6">
+      <label class="form-label">Name</label>
+      <input class="form-control" formControlName="name" />
+    </div>
+
+    <div class="col-md-6">
+      <label class="form-label">Length</label>
+      <input class="form-control" formControlName="length" />
+    </div>
+
+    <div class="col-md-6">
+      <label class="form-label">Start Date</label>
+      <input class="form-control" type="date" formControlName="start" />
+    </div>
+
+    <div class="col-md-6">
+      <label class="form-label">Resort</label>
+      <input class="form-control" formControlName="resort" />
+    </div>
+
+    <div class="col-md-6">
+      <label class="form-label">Price Per Person</label>
+      <input class="form-control" type="number" formControlName="perPerson" />
+    </div>
+
+    <div class="col-md-6">
+      <label class="form-label">Image</label>
+      <input class="form-control" formControlName="image" />
+    </div>
+
+    <div class="col-12">
+      <label class="form-label">Description</label>
+      <textarea class="form-control" rows="4" formControlName="description"></textarea>
+    </div>
+
+    <div class="col-12">
+      <button type="submit" class="btn btn-primary">Update Trip</button>
+    </div>
+  </form>
+</div>
