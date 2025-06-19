@@ -9,5 +9,4 @@ export const routes: Routes = [
   { path: '', component: TripListingComponent },
   { path: 'add-trip', component: AddTripComponent },
   { path: 'edit-trip/:code', component: EditTripComponent }
-
 ];

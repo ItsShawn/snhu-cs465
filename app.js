@@ -10,9 +10,15 @@ const corsOptions = {
   credentials: true
 };
 
+require('dotenv').config();
+
 // === MONGOOSE & MODELS ===
 require('./app_api/models/db');
 require('./app_api/models/travlr'); // Trip schema
+
+require('./app_api/models/user');
+require('./app_api/config/passport');
+
 
 // === ROUTES ===
 const indexRouter = require('./app_server/routes/index');
@@ -20,6 +26,9 @@ const travelRouter = require('./app_server/routes/travel');
 const apiRouter = require('./app_api/routes/index');
 
 const app = express();
+
+const passport = require('passport');
+app.use(passport.initialize());
 
 // === VIEW ENGINE SETUP (Handlebars) ===
 app.set('views', path.join(__dirname, 'app_server', 'views'));
